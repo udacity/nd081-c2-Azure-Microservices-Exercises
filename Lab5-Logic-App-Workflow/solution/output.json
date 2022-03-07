@@ -1,0 +1,34 @@
+{
+    "headers": {
+        "Pragma": "no-cache",
+        "Transfer-Encoding": "chunked",
+        "Retry-After": "1800",
+        "Vary": "Accept-Encoding",
+        "x-ms-request-id": "21a4750d-4a10-48f1-88ad-fd439f2b1675",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Timing-Allow-Origin": "*",
+        "x-ms-apihub-cached-response": "false",
+        "Cache-Control": "no-store, no-cache",
+        "Date": "Tue, 02 Jun 2020 03:13:21 GMT",
+        "Location": "https://logic-apis-eastus.azure-apim.net/apim/rss/cb0f2391666e44f89ef211ecab55e5e9/OnNewFeed?feedUrl=http%3a%2f%2frss.cnn.com%2frss%2fcnn_topstories.rss&since=2020-06-02+03%3a05%3a15.0000000Z",
+        "Set-Cookie": "ARRAffinity=6cda520e0592547ce280df9ba7009010a6cc67a374134547ed5c8ea7449c3b39;Path=/;HttpOnly;Domain=rss-eus.azconn-eus.p.azurewebsites.net",
+        "Content-Type": "application/json",
+        "Expires": "-1",
+        "Content-Length": "5653"
+    },
+    "body": {
+        "id": "https://www.cnn.com/travel/article/yim-tin-tsai-island-hong-kong/index.html",
+        "title": "The homes frozen in time on Hong Kong's abandoned Yim Tin Tsai island",
+        "primaryLink": "http://rss.cnn.com/~r/rss/cnn_topstories/~3/y3yvvIuNwWc/index.html",
+        "links": [
+            "http://rss.cnn.com/~r/rss/cnn_topstories/~3/y3yvvIuNwWc/index.html"
+        ],
+        "updatedOn": "0001-01-01 00:00:00Z",
+        "publishDate": "2020-06-02 01:59:59Z",
+        "summary": "While many visitors to Hong Kong know about the main Hong Kong island, home to many of the financial capital's skyscrapers, the city is actually an archipelago.<div class=\"feedflare\">\n<a href=\"http://rss.cnn.com/~ff/rss/cnn_topstories?a=y3yvvIuNwWc:JQqmsBjAKBQ:yIl2AUoC8zA\"><img src=\"http://feeds.feedburner.com/~ff/rss/cnn_topstories?d=yIl2AUoC8zA\" border=\"0\"></img></a> <a href=\"http://rss.cnn.com/~ff/rss/cnn_topstories?a=y3yvvIuNwWc:JQqmsBjAKBQ:7Q72WNTAKBA\"><img src=\"http://feeds.feedburner.com/~ff/rss/cnn_topstories?d=7Q72WNTAKBA\" border=\"0\"></img></a> <a href=\"http://rss.cnn.com/~ff/rss/cnn_topstories?a=y3yvvIuNwWc:JQqmsBjAKBQ:V_sGLiPBpWU\"><img src=\"http://feeds.feedburner.com/~ff/rss/cnn_topstories?i=y3yvvIuNwWc:JQqmsBjAKBQ:V_sGLiPBpWU\" border=\"0\"></img></a> <a href=\"http://rss.cnn.com/~ff/rss/cnn_topstories?a=y3yvvIuNwWc:JQqmsBjAKBQ:qj6IDK7rITs\"><img src=\"http://feeds.feedburner.com/~ff/rss/cnn_topstories?d=qj6IDK7rITs\" border=\"0\"></img></a> <a href=\"http://rss.cnn.com/~ff/rss/cnn_topstories?a=y3yvvIuNwWc:JQqmsBjAKBQ:gIN9vFwOqvQ\"><img src=\"http://feeds.feedburner.com/~ff/rss/cnn_topstories?i=y3yvvIuNwWc:JQqmsBjAKBQ:gIN9vFwOqvQ\" border=\"0\"></img></a>\n</div><img src=\"http://feeds.feedburner.com/~r/rss/cnn_topstories/~4/y3yvvIuNwWc\" height=\"1\" width=\"1\" alt=\"\"/>",
+        "copyright": "",
+        "categories": []
+    }
+}

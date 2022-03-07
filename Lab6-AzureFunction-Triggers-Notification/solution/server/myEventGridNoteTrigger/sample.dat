@@ -1,0 +1,14 @@
+[
+   {   "id": "01",   
+       "eventType": "recordInserted",   
+       "subject": "myapp/notes/1",   
+       "eventTime": "2020-08-10T21:03:07+00:00",   
+       "data": {     
+                  "title":"testing title",     
+                  "description": "testing description here"   
+                },  
+        "dataVersion": "1.0",   
+        "metadataVersion": "1",   
+        "topic": "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.EventGrid/topics/{topic}" 
+   }
+]

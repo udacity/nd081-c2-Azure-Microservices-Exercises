@@ -1,0 +1,17 @@
+<html>
+<body>
+    <div class="panel">
+        <h3 class="ml-2"> My Notes</h3>
+        {% for n in notes %}
+        <div class="panel">
+            <div class="panel-boby">
+                <div class="panel-title">{{n.title}}</div>
+                <p class="text-muted"> {{ n.desc }}</p>
+                <hr>
+            </div>
+            
+         </div>
+        {% endfor %}       
+</body>
+
+</html>

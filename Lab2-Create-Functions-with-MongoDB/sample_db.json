@@ -1,0 +1,23 @@
+[
+    {
+        "_id": {
+            "$oid": "5ed439f1a5193402a6b11d9f"
+        },
+        "title": "hey do our homework",
+        "desc": "biology lesson 5"
+    },
+    {
+        "_id": {
+            "$oid": "5ed43a30a5193402a6b11da0"
+        },
+        "title": "do laundry",
+        "desc": "wash clothes -- pants only"
+    },
+    {
+        "_id": {
+            "$oid": "5ed46ebfa5193402a6b11da2"
+        },
+        "title": "make guac and chips",
+        "desc": "need 5 avocadoes and lime for guests"
+    }
+]

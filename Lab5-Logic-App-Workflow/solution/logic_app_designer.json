@@ -1,0 +1,73 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "Send_email_(V4)": {
+                "inputs": {
+                    "body": {
+                        "from": "akhoang88@outlook.com",
+                        "ishtml": true,
+                        "subject": "TEST FROM LOGIC APP",
+                        "text": "<p>@{triggerBody()}@{triggerBody()?['categories']}@{triggerBody()?['links']}</p>",
+                        "to": "akhoang88@gmail.com"
+                    },
+                    "host": {
+                        "connection": {
+                            "name": "@parameters('$connections')['sendgrid']['connectionId']"
+                        }
+                    },
+                    "method": "post",
+                    "path": "/v4/mail/send"
+                },
+                "runAfter": {},
+                "type": "ApiConnection"
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {},
+        "parameters": {
+            "$connections": {
+                "defaultValue": {},
+                "type": "Object"
+            }
+        },
+        "triggers": {
+            "When_a_feed_item_is_published": {
+                "inputs": {
+                    "host": {
+                        "connection": {
+                            "name": "@parameters('$connections')['rss']['connectionId']"
+                        }
+                    },
+                    "method": "get",
+                    "path": "/OnNewFeed",
+                    "queries": {
+                        "feedUrl": "http://rss.cnn.com/rss/money_topstories.rss"
+                    }
+                },
+                "recurrence": {
+                    "frequency": "Minute",
+                    "interval": 5
+                },
+                "splitOn": "@triggerBody()?['value']",
+                "type": "ApiConnection"
+            }
+        }
+    },
+    "parameters": {
+        "$connections": {
+            "value": {
+                "rss": {
+                    "connectionId": "/subscriptions/59579c29-d30b-4a3d-a102-6cf14458681e/resourceGroups/labRG/providers/Microsoft.Web/connections/rss",
+                    "connectionName": "rss",
+                    "id": "/subscriptions/59579c29-d30b-4a3d-a102-6cf14458681e/providers/Microsoft.Web/locations/eastus/managedApis/rss"
+                },
+                "sendgrid": {
+                    "connectionId": "/subscriptions/59579c29-d30b-4a3d-a102-6cf14458681e/resourceGroups/labRG/providers/Microsoft.Web/connections/sendgrid",
+                    "connectionName": "sendgrid",
+                    "id": "/subscriptions/59579c29-d30b-4a3d-a102-6cf14458681e/providers/Microsoft.Web/locations/eastus/managedApis/sendgrid"
+                }
+            }
+        }
+    }
+}

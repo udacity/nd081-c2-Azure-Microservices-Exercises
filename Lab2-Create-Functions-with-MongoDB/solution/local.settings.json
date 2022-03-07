@@ -1,0 +1,6 @@
+{
+  "IsEncrypted": true,
+  "Values": {
+  "FUNCTIONS_WORKER_RUNTIME": "yourruntimehash",
+  "ConnectionStrings": {}
+}
