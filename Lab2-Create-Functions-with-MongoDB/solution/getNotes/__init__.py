@@ -1,15 +1,16 @@
 import azure.functions as func
 import pymongo
+import os
 import json
 from bson.json_util import dumps
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
 
     try:
-        url = ""
+        url = os.environ["MyDbConnection"] # Change the Variable name, as applicable to you
         client = pymongo.MongoClient(url)
-        database = client["mydbnamehere"]
-        collection = database['notes']
+        database = client['lab2db'] # Change the MongoDB name
+        collection = database['notes']    # Change the collection name
 
 
         result = collection.find({})
