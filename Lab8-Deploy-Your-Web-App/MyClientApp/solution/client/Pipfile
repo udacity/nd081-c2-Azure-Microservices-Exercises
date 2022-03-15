@@ -6,9 +6,11 @@ name = "pypi"
 
 
 [packages]
-
-flask = "*"
-requests = "*"
+azure-cli-core = "==2.34.1"
+bson = "==0.5.10"
+pymongo = "==4.0.2"
+requests = "==2.23.0"
+Flask = "==1.1.2"
 Jinja2="*"
 Werkzeug = "*"
 

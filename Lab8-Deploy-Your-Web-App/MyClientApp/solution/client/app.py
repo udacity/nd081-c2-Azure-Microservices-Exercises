@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    request_url = "http://localhost:7071/api/"
+    request_url = "https://user187903functionapp.azurewebsites.net/api/getnotes"
     response = requests.get(request_url + 'getNotes')
     notes = response.json()
     return render_template("index.html", notes=notes)

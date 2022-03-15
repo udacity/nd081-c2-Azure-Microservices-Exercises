@@ -1,0 +1,6 @@
+azure-cli-core==2.34.1
+bson==0.5.10
+Flask==1.1.2
+requests==2.23.0
+Jinja2==3.0.3
+Werkzeug==2.0.3
